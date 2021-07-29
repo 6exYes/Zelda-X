@@ -1,7 +1,7 @@
 local nerd = {
 	1,
 	2,
-  3,
+        3,
 }
 
 for l, c in pairs(game.Players:GetChildren()) do
