@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/6exYes/Synpase-J/main/blacklist.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/6exYes/Synpase-J/main/stuff.lua"))()
