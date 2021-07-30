@@ -1,3 +1,25 @@
+local cosbySettings = {
+	Version = '1.0';
+	ChatWaitTime = 0.40;
+	PrefixOfOutput = "[ Zelda X ]";
+	SilentMode = false;
+	Toggle = false;
+	Hotkey = Enum.KeyCode.J;
+	Discord = 'None'
+};
+
+local notifSettings = {
+	["NotifTitle"] = "[ Zelda X ]";
+	["NotifIcon"] = "http://www.roblox.com/asset/?id=609194580";
+	["NotifSound"] = "5796663135";
+};
+
+do
+	sendOutput("Access Granted!");
+end
+sendOutput(" Version: "..cosbySettings.Version);
+sendNotif("Thanks for using my script!")
+
 local nerd = {
 	1,
 	2,
