@@ -1,43 +1,20 @@
-local cosbySettings = {
-	Prefix = ':';
-	Version = 'v2.4.2';
-	ChatWaitTime = 0.40;
-	PrefixOfOutput = "[Test]";
-	SilentMode = false;
-	Toggle = false;
-	Hotkey = Enum.KeyCode.V;
-	Discord = ''
-};
-
-local notifSettings = {
-	["NotifTitle"] = "[Test]";
-	["NotifIcon"] = "http://www.roblox.com/asset/?id=6082548053";
-	["NotifSound"] = "rbxassetid://3398620867";
-};
-
--- // Finish up
--- // Finish up
-do 
-	sendOutput(" Access Granted!");
-end
-sendOutput(" Version: "..cosbySettings.Version);
-sendNotif("Loaded!", "Credits to Owners: DJRuv");
-
-local bitch = {
-	1,
-}
-
-for l, c in pairs(game.Players:GetChildren()) do
-	for i, v in pairs(bitch) do
-		if c.UserId == v then
-			game.Players.LocalPlayer:Kick("Bruh.")
-		end
-	end
-end
-game.Players.PlayerAdded:Connect(function(plr)
-	for i, v in pairs(bitch) do
-		if plr.UserId == v then
-			game.Players.LocalPlayer:Kick("Bruh.")
-		end
-	end
-end)
+local intro = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+intro.Parent = game:GetService("CoreGui")
+Frame.Parent = intro
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BackgroundTransparency = 1
+Frame.Size = UDim2.new(1, 0, 0, 300)
+Frame.Position = UDim2.new(0, 0, -0.4, 0)
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BackgroundTransparency = 1
+ImageLabel.Position = UDim2.new(0, 0, 0, 0)
+ImageLabel.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=143772677"
+Frame:TweenPosition(UDim2.new(0, 0, 0.2, 0), "Out", "Elastic", 3)
+wait(3.01)
+Frame:TweenPosition(UDim2.new(0, 0, 1.5, 0), "Out", "Elastic", 5)
+wait(5.01)
+intro:Destroy()
