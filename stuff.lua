@@ -12,10 +12,6 @@ local notifSettings = {
 
 -- // Finish up
 -- // Finish up
-do 
-	sendOutput(" Access Granted!");
-end
-sendOutput(" Version: "..cosbySettings.Version);
 sendNotif("Loaded!", "Thanks for using Zelda X! | 🛡");
 
 local banned = {
